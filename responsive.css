@@ -1,0 +1,13 @@
+@media (max-width: 1023px) {
+
+}
+@media (max-width: 767px) {
+    .video_block {
+        display: none;
+    }
+
+    .icons_group {
+        padding: 0px 126px;
+    }
+
+}
