@@ -57,3 +57,22 @@ inputsAndTextarea.forEach(function (element) {
     element.addEventListener('blur', handleBlur);
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const allServicesLink = document.querySelector('.all-services');
+    const servicesLinks = document.querySelectorAll('.services-list a');
+    const servicesList = document.querySelector('.services-list');
+
+    allServicesLink.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        allServicesLink.classList.toggle('active');
+        servicesList.classList.toggle('active');
+    });
+
+    servicesLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            allServicesLink.classList.remove('active');
+            servicesList.classList.remove('active');
+        });
+    });
+});
