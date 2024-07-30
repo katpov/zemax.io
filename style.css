@@ -483,3 +483,12 @@ footer .content hr {
     width: 800px;
     right: 0;
 }
+.services-section .title {
+    position: relative;
+}
+.bg-circles {
+    position: absolute;
+    top: -286px;
+    right: 0;
+    width: 500px;
+}
