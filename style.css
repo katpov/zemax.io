@@ -10,6 +10,9 @@ body {
 .container-fluid {
     max-width: 1200px;
 }
+.position-relative {
+    position: relative;
+}
 h1 {
     font-size: 90px;
     line-height: 150%;
@@ -106,10 +109,24 @@ header {
     width: 20px;
     height: 20px;
 }
+.industries-section {
+    padding-bottom: 0;
+}
+.industries-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    border-top: 1px solid #313131;
+    padding: 24px 0;
+    border-bottom: 1px solid #2E9389;
+}
+.industries-list >* {
+    color: #484848;
+}
 .services-list {
     display: none;
     position: absolute;
-    background: #fff;
+    background: #050505;
     z-index: 5;
     padding: 16px 24px;
     width: max-content;
@@ -120,7 +137,6 @@ header {
     display: block;
 }
 .services-list a {
-    color: #000;
     display: block;
     padding: 8px;
 }
@@ -137,10 +153,36 @@ a.all-services {
    display: inline-flex;
    align-items: center;
 }
+.team-section .content {
+    display: flex;
+    gap: 16px;
+}
+.team-section .team-item {
+    border: 1px solid #439e95;
+    border-radius: 24px;
+    width: 25%;
+    text-align: center;
+    padding: 24px;
+}
+.team-section .team-item h5 {
+    margin: 24px 0 0;
+}
+.team-section .team-item p {
+    color: #a3a3a3;
+    margin: 8px 0 0;
+}
+.team-section .bg-left {
+    position: absolute;
+    right: 0;
+    top: -360px;
+    width: 520px;
+}
 .header-section {
     padding: 0;
-    height: calc(100vh - 160px);
     position: relative;
+}
+.header-section .container-fluid {
+    min-height: calc(100vh - 100px);
 }
 .header-section h1 {
     position: relative;
@@ -223,7 +265,7 @@ a.all-services {
     flex-direction: column;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    max-height: 48px;
+    max-height: 74px;
 }
 .raves-ticker .item {
     display: flex;
@@ -232,9 +274,16 @@ a.all-services {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     height: fit-content;
-    min-height: 48px;
+    min-height: 74px;
     position: relative;
     cursor: default;
+    background: #080808;
+    padding: 24px;
+    min-width: 200px;
+    font-size: 20px;
+    line-height: 24px;
+    border: 1px solid #404040;
+    border-radius: 16px;
 }
 .raves-ticker:hover {
     -webkit-animation-play-state: paused;
@@ -244,9 +293,8 @@ a.all-services {
 }
 .raves-ticker-container {
     overflow-x: auto;
-    position: absolute;
-    bottom: 56px;
     width: 100vw;
+    margin-top: 40px;
 }
 .raves-ticker-container::-webkit-scrollbar {
     display: none;
@@ -255,7 +303,7 @@ a.all-services {
     scrollbar-width: none;
 }
 .raves-ticker > *+* {
-    margin-left: 80px;
+    margin-left: 24px;
 }
 @-webkit-keyframes raves-ticker {
     0% {

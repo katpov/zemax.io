@@ -64,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     allServicesLink.addEventListener('click', function(event) {
         event.preventDefault();
-
         allServicesLink.classList.toggle('active');
         servicesList.classList.toggle('active');
     });
@@ -76,3 +75,17 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const ticker = document.querySelector('.raves-ticker');
+    const items = Array.from(ticker.children);
+    const numberOfClones = 9;
+
+    for (let i = 0; i < numberOfClones; i++) {
+        items.forEach(item => {
+            const clone = item.cloneNode(true);
+            ticker.appendChild(clone);
+        });
+    }
+});
+
