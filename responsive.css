@@ -1,13 +1,230 @@
+@media (max-width: 1400px) {
+    .about-us-section img {
+        right: 0;
+    }
+}
 @media (max-width: 1023px) {
-
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 48px;
+        margin-bottom: 32px;
+    }
+    h3 {
+        font-size: 36px;
+    }
+    h4 {
+        font-size: 28px;
+    }
+    h5 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    h6 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .header-menu > *+* {
+        margin-left: 20px;
+    }
+    .header-section .container-fluid {
+        min-height: auto;
+    }
+    body .container-fluid {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    section {
+        padding: 80px 0;
+    }
+    .bg-img {
+        height: auto;
+        min-height: 600px;
+        top: -120px;
+    }
+    .raves-ticker-container {
+        margin-top: 100px;
+    }
+    .team-section .bg-left {
+        top: -270px;
+        right: 24px;
+        width: 300px;
+    }
+    .team-section .team-item {
+        width: calc((100% - 16px) / 2);
+    }
+    .team-section .team-item img {
+        width: 120px;
+    }
+    .header-section h1::after {
+        bottom: 34px;
+    }
+    .header-section h1::before {
+        top: 40px;  
+    }
+    .bg-circles {
+        top: -218px;
+        width: 300px;
+    }
+    button {
+        min-width: 120px;
+    }
+    .hero-button button {
+        min-width: 280px;
+        padding: 16px;
+    }
+    .header-section svg {
+        left: 320px;
+        bottom: 6px;
+        border-radius: 24px;
+    }
+    .img-map {
+        object-fit: cover;
+        max-width: 100%;
+    }
 }
 @media (max-width: 767px) {
-    .video_block {
+    body {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    body .container-fluid {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    h1 {
+        font-size: 48px;
+        line-height: 120%;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 120%;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    header {
+        padding: 24px 0;
+    }
+    .header-menu {
+        margin-left: 0;
+    }
+    .header-menu > *+* {
+        margin-left: 8px;
+    }
+    .header-block .left-group {
+        justify-content: space-between;
+        width: 100%;
+        font-size: 12px;
+    }
+    .header-button {
         display: none;
     }
-
     .icons_group {
         padding: 0px 126px;
     }
+    .show-mobile {
+        display: block;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    .header-section h1::before {
+        right: 0px;
+        top: 28px;
+        width: 100px;
+    }
+    .header-section h1::after {
+        bottom: 24px;
+    }
+    .line::before {
+        top: auto;
+        right: 0;
+        bottom: -18px;
+    }
+    .hero-button button {
+        margin-top: 28px;
+    }
+    .header-section .text-block .ml {
+        margin-left: 100px;
+    }
+    .header-section h1::after {
+        width: 80px;
+    }
+    .hero-button button {
+        min-width: 240px;
+    }
+    .header-section svg {
+        left: 260px;
+    }
+    .raves-ticker .item {
+        min-height: 40px;
+        padding: 12px;
+        min-width: 100px;
+        font-size: 12px;
+        line-height: 14px;
+        border-radius: 8px;
+    }
+    .bg-img {
+        min-height: 540px;
+    }
+    .raves-ticker-container {
+        margin-top: 50px;
+    }
+    .raves-ticker > *+* {
+        margin-left: 8px;
+    }
+    section {
+        padding: 40px 0;
+    }
+    .about-us-section img {
+        width: 200px;
+    }
+    .bg-circles {
+        top: -124px;
+        width: 160px;
+        z-index: -1;
+    }
+    .industries-list {
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
 
+    }
+    .services-section .content {
+        gap: 16px;
+    }
+    .services-section .content .service {
+        width: calc((100% - 16px) / 2);
+    }
+    .team-section .bg-left {
+        top: -66px;
+        width: 160px;
+    }
+    .sub-line {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .sub-line > *+* {
+        margin-left: 0;
+    }
+    .img-map {
+        top: 60px;
+    }
+}
+@media (max-width: 427px) {
+    .header-block .left-group .logo {
+        position: absolute;
+        opacity: 0.6;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+    }
 }

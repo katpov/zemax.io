@@ -26,6 +26,16 @@ h2 {
     position: relative;
     width: max-content;
 }
+h3 {
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 500;
+}
+h4 {
+    font-size: 36px;
+    line-height: 120%;
+    font-weight: 500;
+}
 h5 {
     font-size: 24px;
     line-height: 28px;
@@ -91,6 +101,7 @@ header {
     width: 100vw;
     height: 100%;
     min-height: 664px;
+    object-fit: cover;
 }
 .header-menu {
     margin-left: 40px;
@@ -156,11 +167,12 @@ a.all-services {
 .team-section .content {
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
 }
 .team-section .team-item {
     border: 1px solid #439e95;
     border-radius: 24px;
-    width: 25%;
+    width: calc((100% - 48px) / 4);
     text-align: center;
     padding: 24px;
 }
@@ -214,6 +226,9 @@ a.all-services {
 .header-section .text-block,
 .header-section h1 span {
     position: relative;
+}
+.show-mobile {
+    display: none;
 }
 .header-section .text-block .ml {
     margin-left: 200px;
@@ -378,9 +393,15 @@ section {
 .services-section .content .service.animate-block p {
     color: #fff;
 }
-
-
-
+.industries-items-group {
+    margin-top: 80px;
+}
+.industries-items-group >*+* {
+    margin-top: 40px;
+}
+.industries-item h6 {
+    color: #9b9b9b;
+}
 
 
 .bg-popup {
